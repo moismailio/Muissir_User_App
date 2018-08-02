@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:weightSum="2"
+    android:background="@drawable/rounded_dialg"
+    >
+
+
+    <ImageView
+        android:id="@+id/ivOne"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:padding="8dp"
+        android:src="@drawable/rate_happy"
+        />
+
+    <ImageView
+        android:id="@+id/ivTwo"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:padding="8dp"
+        android:src="@drawable/sad"
+        />
+
+    <ImageView
+        android:id="@+id/ivThree"
+        android:layout_weight="0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/ivIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings_white_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerLang"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                >
+            </Spinner>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:text="please select one of the following services"
+        android:padding="8dp"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tvTitle"
+        android:id="@+id/rvServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
